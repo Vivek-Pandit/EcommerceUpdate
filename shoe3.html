@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShoeBazzar.com</title>
+  <!-- CSS-link -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <!-- CSS -->
+  <!-- <link href="Shoestyle.css" rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+<header>
+  <a href="#" class="logo"><img src="image/logo.png" alt="" /></a>
+
+  <ul class="navmenu">
+    <li><a href="#">home</a></li>
+    <li><a href="shop.html">shop</a></li>
+    <li><a href="#">products</a></li>
+    <li><a href="#">page</a></li>
+    <li><a href="#">Docs</a></li>
+  </ul>
+
+  <div class="nav-icon">
+    <a href="login.html"><i class="bx bx-user"></i></a>
+    <a href="#"><i class="bx bx-cart"></i></a>
+    <input type="text" class="search-hover"  placeholder=""/>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </div>
+</header>
+<body>
+
+  <main class="container">
+
+    <!-- Left Column / Headphones Image -->
+    <div class="left-column">
+      <img data-image="black" src="images/black.png" alt="">
+      <img data-image="blue" src="images/blue.png" alt="">
+      <img data-image="red" class="active" src="images/red.png" alt="">
+    </div>
+
+
+    <!-- Right Column -->
+    <div class="right-column">
+
+      <!-- Product Description -->
+      <div class="product-description">
+        <span>Puma Shoes</span>
+        <h1>Sports Shoe</h1>
+        <p>ENGINEERED ARTICULATION<br>
+          Strategically placed grooves in the outsole, midsole, and upper, allow the shoe to flex with your foot, while
+          delivering the highest level of support.</p>
+        <p>
+          8-CLEAT TRACTION PATTERN <br>
+          A redesigned traction pattern featuring eight Tornado cleats provides increased traction in high-wear areas.
+        </p>
+
+      </div>
+
+      <!-- Product Configuration -->
+      <div class="product-configuration">
+
+        <!-- Product Color -->
+        <div class="product-color">
+          <span>Color</span>
+
+          <div class="color-choose">
+            <div>
+              <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+              <label for="red"><span></span></label>
+            </div>
+            <div>
+              <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+              <label for="blue"><span></span></label>
+            </div>
+            <div>
+              <input data-image="black" type="radio" id="black" name="color" value="black">
+              <label for="black"><span></span></label>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cable Configuration -->
+        <div class="cable-config">
+          <span>Size Guide</span>
+
+          <div class="cable-choose">
+            <td>
+              <tr>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>10</button>
+                <button>11</button>
+                <button>12</button>
+                <button>13</button>
+                <button>14</button>
+              </tr>
+            </td>
+          </div>
+
+          <a href="#">How to configurate your shoe size</a>
+        </div>
+
+      </div>
+
+      <!-- Product Pricing -->
+      <div class="product-price">
+        <span>₹ 9,889</span>
+        <a href="#" class="cart-btn">Add to cart</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
